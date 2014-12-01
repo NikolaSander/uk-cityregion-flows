@@ -260,8 +260,8 @@ module.exports = function(data, config) {
       var text = info.select('.text').selectAll('text')
         .data([
           data.names[d.id],
-          'Wanderungsgewinn: ' + formatNumber(d.inflow),
-          'Wanderungsverlust: ' + formatNumber(d.outflow)
+          'Total in: ' + formatNumber(d.inflow),
+          'Total out: ' + formatNumber(d.outflow)
         ]);
       text.enter().append('text');
       text
